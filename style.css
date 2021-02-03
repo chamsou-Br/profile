@@ -1,0 +1,601 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-X: hidden;
+    
+}
+
+.interface
+{
+    background-size: 100%;
+    background-attachment: fixed;
+    background-image: url("slide4.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    height: 800px;
+    z-index: 1;
+   -webkit-transition: all 5s ease-in-out;
+    -moz-transition: all 5s ease-in-out;
+    -o-transition: all 5s ease-in-out;
+    transition: all 5s ease-in-out;
+}
+.interface .overlay
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    color: aqua;
+    z-index:2;
+}
+@keyframes design {
+    from{
+       right:1200px;
+    }
+    to{
+       Right: 0;
+    }}
+
+.carousel
+{
+    animation: design 4s;
+}
+.carousel-inner .carousel-item 
+{
+    margin-top:100px;
+    width: 100%;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+    height: 450px;   
+}
+.interface .container
+{
+    position: relative;
+    z-index:7;
+}
+.pho 
+{
+    box-shadow: 6px 11px 10px #dc3545;
+    padding: 20px;
+    margin-top: 20px;
+    width: 300px;
+    margin-bottom: 10px;
+    background-color: none;
+    border-radius:900px;
+}
+@keyframes design2 {
+    from{
+       opacity: 0;
+    }
+    to{
+       opacity: 1;
+    }}
+.design
+{
+    animation: design2 7s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    z-index: 20;
+    position: relative;
+    
+    color: #FFF;
+    font-weight: 900;
+    top:75px;
+}
+.nom-prenom
+{
+    z-index: 5;
+    animation: design2 7s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    width: 60%;
+    position: relative;
+    color: #000;
+    font-weight: 900;
+    border-radius: 40px;
+    border:2px solid #000  ;
+    box-shadow: 10px 20px 30px 15px;
+    top:0;
+    background: rgba(255,255,255,.3);
+}
+.nom-prenom-sm
+{
+    animation: design2 7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-top: 50px;
+    z-index: 5;
+    width:400px;
+    position: relative;
+    color: #000;
+    font-weight: 900;
+    border-radius: 40px;
+    border:2px solid #000  ;
+    box-shadow: 10px 15px 20px 10px;
+    top:0;
+    background: rgba(255,255,255,.3);
+}
+
+
+
+/*     nav Bar      ----------------------*/
+@keyframes navbar {
+    from{
+       right:1200px;
+    }
+    to{
+       right: 0;
+    }}
+
+.navBar-prs {
+    animation: navbar 3s;
+    min-height: 4rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+    color: #FFF;
+    position: fixed;
+    top: 0;
+    z-index: 1500;
+    width: 100%;
+}
+.activebar
+{
+    background-color:#32064a;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.nav-link:hover
+{
+    background-color: #f78800;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    border-radius: 10px;
+}   
+.nav-item .nav-link
+{
+    -webkit-transition: all .8s ease-out;
+    -moz-transition: all .8s ease-out;
+    -o-transition: all .8s ease-out;
+    transition: all .8s ease-out;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding-left: 5px;
+}
+.nav-item .active-link
+{
+    background-color: #f78800;
+    border-radius: 10px;
+  
+}
+
+@keyframes colorcorp {
+    from{
+          color: #007bff;
+      }
+    to{
+       color: #dc3545;
+    }
+ }
+
+ @keyframes colorelite {
+     from{
+           color: #dc3545;
+       }
+     to{
+        color: #007bff;
+     }
+  }
+
+#elite
+{
+  
+    animation-name: colorelite;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#corp
+{
+    animation-name: colorcorp;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+
+/*  personal-information   */
+
+.personal-information
+{
+    margin-top: 900px;
+    
+}
+
+.personal-information .info1.open{
+   animation: info1 4s;
+}
+@keyframes info1{
+    from{
+        right:350px;
+    }
+    to{
+       right: 0;
+    }
+}
+@media(min-width:768px){
+.personal-information .info3.open{
+    animation: info3 4s;
+ }
+ @keyframes info3{
+     from{
+         left:350px;
+     }
+     to{
+        left: 0;
+     }
+ }
+}
+.personal-information .info3.open{
+    animation: info3 4s;
+ }
+ @media(max-width:768px){
+   
+    @keyframes info3{
+        from{
+            right:350px;
+        }
+        to{
+           right: 0;
+        }
+    }
+   }
+@media(min-width:768px){
+ .personal-information .info2.open{
+    animation: info2 4s;
+ }
+ @keyframes info2{
+     from{
+         top:350px;
+     }
+     to{
+        top: 0;
+     }
+ }
+}
+
+@media(max-width:768px){
+    .personal-information .info2.open{
+       animation: info2 4s;
+    }
+    @keyframes info2{
+        from{
+            left:350px;
+        }
+        to{
+           left: 0;
+        }
+    }
+   }
+.personal-information i
+{
+    border:3px solid #f78800;
+    color: #f78800;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 20px 0px 20px;
+    margin: 10px;
+}
+
+.personal-information h5
+{
+    font-weight: bold;
+    margin: 3px;
+    margin-bottom: 10px;
+    color: #f78800;
+    
+}
+.personal-information p
+{
+    color: #08526d;
+    font-weight: 500;
+}
+.personal-information strong
+{
+     color: #dc3545;
+}
+.personal-information a:hover
+{
+    color: #f78800;
+}
+
+
+/* *************   full-stack-img  ***************** */
+
+.full-stack-img
+{
+    height: 500px;
+}
+
+.full-stack-img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* *************   full-stack-info  ***************** */
+@keyframes full-stack-img{
+    from{
+        right: 500px;
+    }
+    to{
+        right: 0;
+    }
+}
+.full-stack-info .full-stack-img.open
+{
+    margin-top: 30px;
+    animation: full-stack-img 4s;
+}
+
+@keyframes full-stack-prg{
+    from{
+        left: 600px;
+    }
+    to{
+        left: 0;
+    }
+}
+@media(min-width:768px){
+.full-stack-info .full-stack-prg.open
+{
+    margin-top: 120px;
+    animation: full-stack-prg 4s;
+}
+}
+@media(max-width:768px){
+    .full-stack-info .full-stack-prg.open
+    {
+        margin-top: 120px;
+        animation: full-stack-prg 4s;
+        animation-delay: 1s;
+    }
+    }
+
+
+.full-stack-info .full-stack-prg h1
+{
+     color: #f78800;
+
+     font-weight: bold;
+     margin-top: 20px;
+
+}
+
+.full-stack-info .full-stack-prg  h2
+{
+    color:#563d7c;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.full-stack-info .full-stack-prg p
+{
+    margin-top: 30px;
+    line-height: 40px;
+    font-size: 22px;
+    padding: 15px;
+    color: rgba(0,0,0,.8);
+
+}
+
+/* skills and services */
+
+.skills-services
+{
+    background-image: url("slide1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    z-index:8;
+    margin-bottom: 0px;
+}
+.skills-services 
+{
+    position: relative;
+    z-index: 6;
+    margin-bottom: 5px;
+}
+
+
+.skills-services .row
+{
+    z-index: 6;
+}
+.skills-services  h2
+{
+    margin-left: 40px;
+    margin-top: 10px;
+    color: #ff8e04;
+}
+
+.skills-services  hr
+{
+    position: absolute;
+     left: 50px;
+     width: 300px;
+    background: #f78800;
+}
+.skills-services .skills p
+{
+    margin-top: 40px;
+    color: #FFF;
+    line-height: 40px;
+    font-size: 22px;
+    
+}
+.skills-services .overlay
+{
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+@keyframes skills{
+      
+    from{
+         right : 400px;;
+    }
+    to {
+        right: 0;
+    }
+
+}
+.skills-services  .skills.open 
+{
+
+    animation: skills;
+    animation-duration:3s ;
+}
+@keyframes services{
+      
+    from{
+         left: 400px;;
+    }
+    to {
+        left: 0;
+    }
+
+}
+@media(min-width:768px){
+.skills-services  .services.open 
+{
+
+    animation: services;
+    animation-duration:3s ;
+}
+}
+@media(max-width:768px){
+    .skills-services  .services.open 
+    {
+    
+        animation: services;
+        animation-duration:3s ;
+        animation-delay: 1.5s;
+    }
+    }
+.skills-services .progress 
+{
+    animation: services;
+    animation-duration:2s ;
+    height: 40px;
+    margin-top: 40px;
+}
+.skills-services .progress .progress-bar
+{
+    background-color: #dc3545;
+    border-radius:0 8px 8px 0;
+}
+.skills-services .progress .progress-percent
+{
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    color: rgba(0,0,0,.8);
+    width: 20%;
+    font-weight: 400;
+    height: 100%;
+    font-size: 22px;
+    padding: 2px;
+}
+.skills-services .progress .progress-title
+{
+    width: 20%;
+    font-weight: 400;
+    height: 100%;
+    font-size: 22px;
+    padding: 2px;
+    color: #FFF;
+}
+
+.skills-services .services
+{
+    z-index: 8;
+}
+.skills-services .services .services-icon
+{
+    margin-top: 30px;
+ 
+}
+.skills-services .services .last-icone
+{
+    margin-bottom: 30px;
+}
+.skills-services .services .services-icones
+{
+    padding-left: 35px;
+}
+@media (min-width:800px){
+    .skills-services .services .services-icones
+{
+    border-left: 2px solid #fff;
+    padding-left: 35px;
+}
+}
+.skills-services .services i
+{
+    color: #fff;
+    border: 2px solid #f78800;
+    border-radius: 20px 0px 20px;
+    font-size: 30px;
+    padding:10px ;
+    width: 70px;
+    margin-top: 10px;
+    height: 60px;
+}
+.skills-services .services i:hover
+{
+    color: #FFF;
+    background-color: #f78800;
+}
+.skills-services .services .services-icon h5
+{
+    color: #ff8e04;
+}
+.skills-services .services .services-icon span
+{
+    color: #Fff;
+
+
+}
+
+/*     upper bar    -------------- */
+
+.upper-bar
+{
+    background-color:#08526d ;
+    width: 100%;
+    color: #FFF;
+    padding:25px;
+    height: 80px;
+    z-index: 555;
+    font-weight: bold;
+}
